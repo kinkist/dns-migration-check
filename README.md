@@ -5,6 +5,15 @@
 pip install -r requirements.txt
 ```
 
+### using under python3.10
+dnspython has issue over python3.11
+```
+  File "./venv/lib/python3.12/site-packages/dns/zone.py", line 1032, in from_file
+    f = open(f, opts)
+        ^^^^^^^^^^^^^
+ValueError: invalid mode: 'rU'
+``` 
+
 ### usage
 ```
 ./dns-migration-check.py --help
